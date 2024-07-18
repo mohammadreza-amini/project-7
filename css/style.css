@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../Font/Vazir.eot") format("eot"),
+    url("../Font/Vazir.ttf") format("truetype"),
+    url("../Font/Vazir.woff") format("woff2"),
+    url("../Font/Vazir.woff2") format("woff");
+}
+
+body {
+  font-family: Vazir;
+  direction: rtl;
+}
+
+* {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none !important;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+nav {
+  display: flex !important;
+  height: 45px !important;
+  align-items: center;
+}
+
+nav a {
+  font-size: 25px !important;
+}
+
+nav ul a {
+  font-size: 14px !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ff8f00;
+}
+
+nav .brand-logo {
+  position: relative !important;
+}
+
+.home {
+  background: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.home .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+
+.home .home-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.home .home-content h1 {
+  /* color: #ff8f00; */
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+.home .home-content p {
+  font-size: 30px;
+}
+
+.home .scroll-down{
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translate(50%);
+    -webkit-transform: translate(50%);
+    -moz-transform: translate(50%);
+    -ms-transform: translate(50%);
+    -o-transform: translate(50%);
+    animation: scolldown 2s ease infinite;
+    -webkit-animation: scolldown 2s ease infinite;
+}
+
+@keyframes scrolldown{
+    
+}
+
+.home .scroll-down img{
+    width: 30px;
+}
