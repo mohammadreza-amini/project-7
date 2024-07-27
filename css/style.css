@@ -11,6 +11,11 @@ body {
   direction: rtl;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 * {
   font-family: Vazir;
   margin: 0;
@@ -22,7 +27,7 @@ body {
   box-shadow: none !important;
 }
 
-.section{
+.section {
   padding: 80px 0;
 }
 
@@ -151,47 +156,44 @@ nav .brand-logo {
 
 /* about */
 
-.flex{
-  display: flex;
-}
-
-.about{
+.about {
   width: 100%;
 }
 
-.about img{
+.about img {
   width: 100%;
 }
 
-.about .about-content h4{
+.about .about-content h4 {
   font-weight: bold;
   position: relative;
   padding-bottom: 7px;
   margin-bottom: 15px;
+  font-size: 30px;
 }
 
-.about .about-content h4::before{
-  content: '';
+.about .about-content h4::before {
+  content: "";
   position: absolute;
   bottom: 0;
-  width: 120px;
+  width: 110px;
   height: 2px;
+  right: -5px;
   background-color: #ff8f00;
 }
 
-.about .about-content p{
+.about .about-content p {
   font-weight: bold;
   position: relative;
   padding-bottom: 10px;
-
 }
 
-.about .about-item{
+.about .about-item {
   text-align: center;
   margin-top: 70px;
 }
 
-.about button{
+.about button {
   background: #ff8f00;
   border: none;
   font-size: 14px;
@@ -204,4 +206,80 @@ nav .brand-logo {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   cursor: pointer;
+}
+
+/* service */
+
+.service {
+  width: 100%;
+}
+
+.service h4 {
+  margin-bottom: 25px;
+  position: relative;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.service h4::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 120px;
+  height: 2px;
+  background-color: #ff8f00;
+}
+
+.service .service-item {
+  width: 100%;
+  margin-top: 13px;
+  position: relative;
+  height: 220px;
+}
+
+.service .service-item img {
+  width: 100%;
+  height: 220px;
+}
+
+.service .service-item span{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.service .service-item span p{
+  font-size: 20px;
+  color: #fff;
+  opacity: 1;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.service .service-item:hover span{
+  opacity: 0;
+}
+
+.service .service-item:hover span p{
+  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  opacity: 0;
 }
