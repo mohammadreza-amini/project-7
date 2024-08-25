@@ -443,6 +443,14 @@ nav .brand-logo {
 
 .contact .contact-desc{
   width: 100%;
+  padding: 0 65px;
+}
+
+.contact .contact-desc form{
+  margin-top: -85px;
+  background-color: #fff;
+  padding: 35px;
+  box-sizing: border-box;
 }
 
 .contact .contact-desc input{
@@ -488,4 +496,65 @@ nav .brand-logo {
     background: transparent;
     color: #000;
     cursor: pointer;
+}
+
+.contact .info{
+  text-align: center;
+}
+
+.contact .info h6{
+  color: #777;
+  font-size: 15px;
+}
+
+.contact .info p{
+  color: #999;
+  font-size: 12px;
+}
+
+.contact .social{
+  margin-top: 25px;
+}
+
+.contact .social ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .social ul li{
+  margin: 0 15px;
+}
+
+.contact .social ul li a{
+  color: #777;
+}
+
+.contact .social ul li svg{
+  font-size: 18px;
+}
+
+/* footer */
+
+footer{
+  border-top: solid 1.5px #999;
+  padding-top: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer .fa-heart{
+  color: rgb(151, 3, 3);
+}
+
+footer .fa-code{
+  color: rgb(0, 4, 255);
+}
+
+footer h6{
+  font-size: 18px;
+}
+
+footer p{
+  font-size: 14px;
 }
