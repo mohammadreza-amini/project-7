@@ -313,10 +313,14 @@ nav .brand-logo {
   z-index: 1000;
 }
 
+.lightbox.open{
+  display: flex;
+}
+
 .lightbox .img-box{
   position: relative;
-  width: 900px;
-  height: 550px;
+  width: 930px;
+  height: 650px;
   padding: 40px 0;
 }
 
@@ -411,7 +415,11 @@ nav .brand-logo {
   background-color: #ff8f00;
 }
 
-.work .work-item {
+.work .work-item{
+  margin-top: 13px;
+}
+
+.work .work-item-inner {
   position: relative;
   margin-top: 17px;
   height: 220px;
