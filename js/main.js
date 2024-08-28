@@ -14,7 +14,7 @@ $(document).ready(function () {
     } else {
       index--;
     }
-    lightBoxSlideShow();
+    lightBoxSlideShow()
   });
 
   $(".lightbox-control .next").click(function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
     } else {
       index++;
     }
-    lightBoxSlideShow();
+      lightBoxSlideShow() 
   });
 
   $(".close").click(function () {
@@ -42,6 +42,7 @@ $(document).ready(function () {
 
     $(".lightbox-img").attr("src", imgSrc);
     $(".lightbox-category").html(category);
-    $(".lightbox-counter").html(items + "/" + (index + 1));
+      $(".lightbox-counter").html(index + 1 + "/" + items);
+      
   }
 });

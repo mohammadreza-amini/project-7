@@ -370,7 +370,7 @@ nav .brand-logo {
   height: 100%;
 }
 
-.lightbox .img-box .lightbox-control .perv{
+.lightbox .img-box .lightbox-control .prev{
   display: flex;
   align-items: center;
   position: absolute;
@@ -382,13 +382,13 @@ nav .brand-logo {
 }
 
 .lightbox .img-box .lightbox-control .next,
-.lightbox .img-box .lightbox-control .perv{
+.lightbox .img-box .lightbox-control .prev{
   width: 18px;
   height: 30px;
 }
 
 .lightbox .img-box .lightbox-control .next:hover,
-.lightbox .img-box .lightbox-control .perv:hover{
+.lightbox .img-box .lightbox-control .prev:hover{
   background: rgba(0, 0, 0, .5);
   padding:0 3px;
 }
